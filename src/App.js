@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Cart from "./components/Cart";
+import person1 from "./img/person1.jpeg"
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cart name="Alia" surname="Alia" image={person1} dateOfBirth="01/01/2005" dateOfMissing="12/12/2002" />
     </div>
   );
 }
